@@ -9,7 +9,7 @@ class UrlScraper
   OG_TYPES = %w[url type title description locale
                 image image:url image:secure_url image:type image:width image:height
                 video video:url video:secure_url video:type video:width video:height].freeze
-  URL_REGEX = 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)'.freeze
+  URL_REGEX = 'https?:\/\/(www\.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)'.freeze
 
   def initialize(url)
     @url = url

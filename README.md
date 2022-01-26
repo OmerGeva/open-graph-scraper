@@ -1,7 +1,8 @@
 ## Open Graph Tag Scraper
 
--  URL's of the following form are valid: `https://domain.tld`
-- When cloning the project, please set up a database by running :
+-  URL's of the following form are valid: `https://www.domain.tld`
+-  When cloning the project, please set install the depencies by running `bundle install`
+-  Also, please set up a database by running :
        `rake db:create db:migrate`
  - To run the scraper, use `ruby app.rb`
 - The two endpoints are:

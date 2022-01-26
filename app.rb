@@ -23,7 +23,7 @@ get '/urls' do
 end
 
 post '/url' do
-  url = params[:url]
+  url = params[:url] || params['url']
 
   res = UrlScraper.new(url).call
 
