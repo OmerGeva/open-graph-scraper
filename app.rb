@@ -12,6 +12,9 @@ before do
   content_type :json
 end
 
+#
+#  @params: optional: page[Integer] per_page[Integer]
+#
 get '/urls' do
   page = params[:page] || 1
   per_page = params[:per_page] || 5
@@ -22,6 +25,9 @@ get '/urls' do
   serialized.to_json
 end
 
+#
+#  @params: required: url[String]
+#
 post '/url' do
   url = params[:url] || params['url']
 
